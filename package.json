@@ -22,7 +22,7 @@
     "react-dom": "^16.8.6",
     "react-router-dom": "^5.2.0",
     "redux-devtools-extension": "^2.13.5",
-    "sequelize": "^4.4.4",
+    "sequelize": "^6.3.3",
     "socket.io": "^1.7.2"
   },
   "devDependencies": {
