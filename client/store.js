@@ -1,4 +1,5 @@
-import { createStore } from "redux";
+import { createStore, applyMiddleware } from "redux";
+import { thunkMiddleware } from "redux-thunk";
 
 const GOT_MESSSAGES_FROM_SERVER = "GOT_MESSAGES_FROM_SERVER";
 
@@ -18,5 +19,5 @@ const reducer = (state = initialState, action) => {
   }
 };
 
-const store = createStore(reducer);
+const store = createStore(reducer, applyMiddleware(thunkMiddleware));
 export default store;
