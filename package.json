@@ -1,7 +1,7 @@
 {
-  "name": "stackchat",
+  "name": "looseleash",
   "version": "1.0.0",
-  "description": "A chatty appy chat app",
+  "description": "A slack app for puppies",
   "main": "index.js",
   "scripts": {
     "start": "npm run start-server & npm run build-watch",

@@ -14,12 +14,6 @@ class MessagesList extends Component {
     this.props.fetchInitialMessages();
   }
 
-  // async componentDidMount () {
-  //   const response = await axios.get('/api/messages');
-  //   const messages = response.data;
-  //   this.setState({ messages });
-  // }
-
   render() {
     const channelId = Number(this.props.match.params.channelId); // because it's a string "1", not a number!
     const messages = this.props.messages;
@@ -34,7 +28,7 @@ class MessagesList extends Component {
             <Message message={message} key={message.id} />
           ))}
         </ul>
-        <NewMessageEntry />
+        <NewMessageEntry channelId={channelId} />
       </div>
     );
   }
